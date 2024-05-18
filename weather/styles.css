@@ -1,0 +1,146 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('bkd.jpg') no-repeat center center/cover;
+    background-blend-mode: difference;
+    opacity: 0.9;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weatherForm {
+    position: inherit;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    transition: all 1s;
+    width: 190px;
+    height: 50px;
+    background: white;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.cityInput {
+    position: flex;
+    top: 0;
+    left: 0;
+    width: calc(100% - 40px);
+    height: 42.5px;
+    line-height: 42.5px;
+    outline: 0;
+    border: 0;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+button[type="submit"] {
+  
+    width: 190px;
+    height: 40px;
+    font-size: 1.2rem;
+    background-color: #8c41e7;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 85px;
+    cursor: pointer;
+    border: none;
+}
+
+
+.card {
+    background: linear-gradient(135deg, #a253f7, #5b79ff, #ff7ef7);
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+p {
+    font-size: 1.6rem;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.cityDisplay, .tempDisplay {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.humidityDisplay {
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+.descDisplay {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.weatherEmoji {
+    margin: 0;
+    font-size: 7.5rem;
+    color: #fff;
+}
+
+.errorDisplay {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff7675;
+}
+
+.errorDisplay:hover {
+    color: #ff4d4d;
+}
+
+.errorDisplay:active {
+    color: #ff1a1a;
+}
+
+.fa {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #8c52ff;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+.weatherForm:hover {
+    width: 300px;
+    cursor: pointer;
+}
+
+.weatherForm:hover .cityInput {
+    display: flex;
+}
+
+.weatherForm:hover .fa {
+    background: #8c52ff;
+    color: white;
+}
